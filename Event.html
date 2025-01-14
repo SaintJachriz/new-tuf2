@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <button class="btn">Button</button>
+    </div>
+</body>
+<script>
+    function change(time){
+        return time *4
+    }
+
+    // console.log(change(3))
+
+    function changeTime(days, weeks){
+        const newDay = change(days)
+        const newWeek = change(weeks)
+
+        const time = `Numbers of days are: ${newDay}, while weeks are: ${newWeek}`;
+        return time
+    }
+
+    const result = changeTime(3, 5)
+    console.log(result)
+</script>
+</html>
